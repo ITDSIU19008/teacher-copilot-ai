@@ -79,15 +79,15 @@ app.add_middleware(
 # STATIC + TEMPLATE
 # ==========================================
 
-app.mount(
-    "/static",
-    StaticFiles(directory=STATIC_DIR),
-    name="static"
-)
+# app.mount(
+#     "/static",
+#     StaticFiles(directory=STATIC_DIR),
+#     name="static"
+# )
 
-templates = Jinja2Templates(
-    directory=TEMPLATE_DIR
-)
+# templates = Jinja2Templates(
+#     directory=TEMPLATE_DIR
+# )
 
 
 # ==========================================
@@ -107,15 +107,22 @@ class LessonRequest(BaseModel):
 # HOME
 # ==========================================
 
-@app.get("/")
-def home(request: Request):
+# @app.get("/")
+# def home(request: Request):
 
-    return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request
-        }
-    )
+#     return templates.TemplateResponse(
+#         "index.html",
+#         {
+#             "request": request
+#         }
+#     )
+
+@app.get("/")
+def home():
+    return {
+        "status": "ok",
+        "message": "Teaching Copilot API is running"
+    }
 
 
 # ==========================================
