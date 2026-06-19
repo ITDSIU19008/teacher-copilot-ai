@@ -420,7 +420,8 @@ export default function Sidebar({
                     "
                 >
 
-                    Build lessons faster by Bunni.
+                    To Kit, 
+                    build lessons faster so you can have more time for yourself, Bunni.
 
                 </p>
 
