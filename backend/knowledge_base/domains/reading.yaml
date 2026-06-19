@@ -1,0 +1,66 @@
+reading:
+
+  subskills:
+  
+    - predicting
+
+    - gist
+
+    - detail
+
+    - specific_information
+
+    - infer_attitude_and_opinion
+
+    - deduce_meaning_from_context
+
+    - understand_text_structure
+
+    - intensive_reading
+
+    - extensive_reading
+  
+
+  lesson_flow:
+  
+    - activate_schema
+
+    - prediction
+
+    - preteach_blocking_vocabulary
+
+    - gist
+
+    - detail
+
+    - specific_information
+
+    - infer_attitude_and_opinion
+
+    - intensive_reading
+
+    - extensive_reading
+    
+
+  post_reading_activities:
+
+    - discussion
+
+    - summary
+
+    - question_generation
+
+    - question_answering
+
+    - form_completion
+
+    - chart_completion
+
+    - role_play
+
+    - critical_thinking
+
+    - soft_skills_focus
+
+    - project
+  

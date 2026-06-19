@@ -1,0 +1,47 @@
+activities:
+
+  - name: peer_feedback
+
+  - name: teacher_feedback
+
+  - name: self_assessment
+
+  - name: reflection
+
+  - name: compare_with_model
+
+  - name: checklist_review
+
+  - name: exit_ticket
+
+  - name: pair_review
+
+  - name: group_review
+
+  - name: oral_feedback
+
+  - name: written_feedback
+
+feedback_principles:
+
+  - content_before_language
+
+  - constructive_feedback
+
+  - specific_feedback
+
+  - actionable_feedback
+
+feedback_focus:
+
+  - content
+
+  - organization
+
+  - grammar
+
+  - vocabulary
+
+  - pronunciation
+
+  - fluency

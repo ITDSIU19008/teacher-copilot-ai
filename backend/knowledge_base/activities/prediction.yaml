@@ -1,0 +1,57 @@
+activities:
+
+  - name: title_prediction
+
+    skill:
+      reading
+      listening
+
+  - name: image_prediction
+
+    skill:
+      reading
+      listening
+
+  - name: keyword_prediction
+
+    skill:
+      reading
+      listening
+
+  - name: discussion_prediction
+
+    skill:
+      reading
+      listening
+
+  - name: predict_main_idea
+
+    skill:
+      reading
+
+  - name: predict_story_outcome
+
+    skill:
+      reading
+
+  - name: predict_speaker_intention
+
+    skill:
+      listening
+
+  - name: predict_topic
+
+    skill:
+      reading
+      listening
+
+  - name: pre_listening_questions
+
+    skill:
+      listening
+
+  - name: schema_activation
+
+    skill:
+      reading
+      listening

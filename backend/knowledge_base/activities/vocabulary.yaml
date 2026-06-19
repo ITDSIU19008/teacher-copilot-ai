@@ -1,0 +1,51 @@
+activities:
+
+  - name: picture_matching
+
+  - name: mime_guessing
+
+  - name: context_guessing
+
+  - name: synonym_matching
+
+  - name: antonym_matching
+
+  - name: word_map
+
+  - name: mind_map
+
+  - name: lexical_set_sorting
+
+  - name: gap_fill
+
+  - name: collocation_matching
+
+  - name: dictionary_race
+
+  - name: pronunciation_drill
+
+  - name: word_formation
+
+  - name: peer_teaching
+
+  - name: vocabulary_recycling
+
+  - name: vocabulary_quiz
+
+  - name: communicative_vocabulary_task
+
+  - name: vocabulary_boardwork
+
+  - name: retention_review
+
+  - name: vocabulary_journal
+
+objectives:
+
+  - meaning
+
+  - form
+
+  - pronunciation
+
+  - use

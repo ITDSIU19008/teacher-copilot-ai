@@ -1,0 +1,61 @@
+framework:
+
+  name: Test Teach Test
+
+  stages:
+
+    - initial_test
+
+    - teach
+
+    - final_test
+
+  purpose:
+
+    - identify_existing_knowledge
+
+    - focus_on_learning_gaps
+
+    - measure_improvement
+
+  initial_test:
+
+    activities:
+
+      - diagnostic_task
+
+      - quiz
+
+      - discussion
+
+      - role_play
+
+  teach:
+
+    focus:
+
+      - clarify_errors
+
+      - introduce_missing_language
+
+      - provide_examples
+
+      - guided_practice
+
+  final_test:
+
+    activities:
+
+      - repeat_original_task
+
+      - transfer_task
+
+      - communicative_task
+
+  advantages:
+
+    - student_centered
+
+    - efficient_for_mixed_ability
+
+    - focuses_on_actual_needs

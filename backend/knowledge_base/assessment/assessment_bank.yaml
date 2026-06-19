@@ -1,0 +1,41 @@
+assessment:
+
+  formative:
+
+    - thumbs_up_down
+
+    - mini_whiteboard
+
+    - quick_quiz
+
+    - exit_ticket
+
+    - pair_check
+
+  summative:
+
+    - test
+
+    - presentation
+
+    - project
+
+    - essay
+
+  reading:
+
+    - gist_questions
+
+    - detail_questions
+
+    - inference_questions
+
+  writing:
+
+    - content
+
+    - organization
+
+    - vocabulary
+
+    - grammar

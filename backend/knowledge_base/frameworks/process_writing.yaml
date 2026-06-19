@@ -1,0 +1,74 @@
+framework:
+
+name: Process Writing
+
+cycle:
+
+  pre_writing:
+
+    - lesson_lead_in
+
+    - model_demonstration
+
+    - content_preparation
+
+    - language_preparation
+
+    - organization
+
+  writing:
+
+    - composing
+
+    - drafting
+
+  post_writing:
+
+    - revising
+
+    - editing
+
+    - redrafting
+
+
+principles:
+
+  - content_feedback_first
+
+  - language_feedback_second
+
+
+lesson_flow:
+
+  - lead_in
+
+  - model_analysis
+
+  - audience_analysis
+
+  - purpose_analysis
+
+  - function_analysis
+
+  - style_analysis
+
+  - language_analysis
+
+  - structure_analysis
+
+  - controlled_writing
+
+  - brainstorming
+
+  - planning
+
+  - drafting
+
+  - revising
+
+  - redrafting
+
+  - final_edit
+
+  - final_feedback
+

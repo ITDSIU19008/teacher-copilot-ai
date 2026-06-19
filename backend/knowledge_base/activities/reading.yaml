@@ -1,0 +1,75 @@
+activities:
+
+  gist:
+
+    - choose_best_title
+
+    - one_sentence_summary
+
+    - match_heading
+
+    - identify_main_idea
+
+  detail:
+
+    - comprehension_questions
+
+    - true_false
+
+    - multiple_choice
+
+    - short_answers
+
+  specific_information:
+
+    - scanning_task
+
+    - information_transfer
+
+    - table_completion
+
+    - chart_completion
+
+  inferencing:
+
+    - identify_author_opinion
+
+    - identify_attitude
+
+    - hidden_message
+
+  text_structure:
+
+    - paragraph_ordering
+
+    - match_sections
+
+  intensive_reading:
+
+    - language_analysis
+
+    - vocabulary_analysis
+
+  extensive_reading:
+
+    - book_report
+
+    - reading_log
+
+    - reading_reflection
+
+  post_reading:
+
+    - discussion
+
+    - summary
+
+    - role_play
+
+    - project
+
+    - critical_thinking
+
+    - question_generation
+
+    - question_answering

@@ -1,0 +1,17 @@
+rubric:
+
+  gist_understanding:
+
+    weight: 25
+
+  detail_understanding:
+
+    weight: 25
+
+  inference:
+
+    weight: 25
+
+  vocabulary_in_context:
+
+    weight: 25

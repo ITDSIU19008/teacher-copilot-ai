@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        Teaching AI OS
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            Teaching AI OS
+        </h1>
+
+        <!-- FORM -->
+
+        <form id="lesson-form">
+
+            <label>
+                Course Type
+            </label>
+
+            <select id="course_type">
+
+                <option>
+                    IELTS
+                </option>
+
+                <option>
+                    TOEIC
+                </option>
+
+            </select>
+
+            <label>
+                Band
+            </label>
+
+            <input
+                type="text"
+                id="band"
+                value="5.5"
+            >
+
+            <label>
+                Skill
+            </label>
+
+            <select id="skill">
+
+                <option>
+                    Reading
+                </option>
+
+                <option>
+                    Writing
+                </option>
+
+            </select>
+
+            <label>
+                Topic
+            </label>
+
+            <input
+                type="text"
+                id="topic"
+                value="Climate Change"
+            >
+
+            <label>
+                Duration
+            </label>
+
+            <input
+                type="number"
+                id="duration"
+                value="60"
+            >
+
+            <!-- BUTTONS -->
+
+            <div class="button-row">
+
+                <button type="submit">
+
+                    Generate Lesson
+
+                </button>
+
+                <button
+                    type="button"
+                    onclick="openDraftModal()">
+
+                    Load Draft
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- RESULT -->
+
+        <div id="result"></div>
+
+    </div>
+
+    <!-- DRAFT MODAL -->
+
+    <div
+        id="draft-modal"
+
+        class="modal"
+
+        style="display:none;">
+
+        <div class="modal-content">
+
+            <h2>
+                Saved Drafts
+            </h2>
+
+            <div id="draft-list">
+
+            </div>
+
+            <button
+                onclick="closeDraftModal()">
+
+                Close
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SAVE MODAL -->
+
+    <div
+        id="save-modal"
+
+        class="modal"
+
+        style="display:none;">
+
+        <div class="modal-content">
+
+            <h2>
+                Draft Already Exists
+            </h2>
+
+            <p>
+
+                Do you want to overwrite
+                the current draft or create
+                a new version?
+
+            </p>
+
+            <div class="button-row">
+
+                <button
+                    onclick="confirmOverwrite()">
+
+                    Overwrite
+
+                </button>
+
+                <button
+                    onclick="confirmNewVersion()">
+
+                    Create Version
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const form = document.getElementById(
+            "lesson-form"
+        );
+
+        // GENERATE LESSON
+
+        form.addEventListener(
+
+            "submit",
+
+            async function(event) {
+
+                event.preventDefault();
+
+                const payload = {
+
+                    course_type:
+                        document.getElementById(
+                            "course_type"
+                        ).value,
+
+                    band:
+                        document.getElementById(
+                            "band"
+                        ).value,
+
+                    skill:
+                        document.getElementById(
+                            "skill"
+                        ).value,
+
+                    topic:
+                        document.getElementById(
+                            "topic"
+                        ).value,
+
+                    duration:
+                        parseInt(
+                            document.getElementById(
+                                "duration"
+                            ).value
+                        )
+                };
+
+                const response = await fetch(
+
+                    "/generate_lesson",
+
+                    {
+
+                        method: "POST",
+
+                        headers: {
+
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body:
+                            JSON.stringify(payload)
+                    }
+                );
+
+                const data =
+                    await response.json();
+
+                renderLesson(data);
+            }
+        );
+
+        // RENDER LESSON
+
+        function renderLesson(data) {
+
+            const result =
+                document.getElementById(
+                    "result"
+                );
+
+            const lesson =
+                data.lesson;
+
+            window.currentLesson =
+                lesson;
+
+            let html = `
+
+                <div class="top-bar">
+
+                    <h2
+                        contenteditable="true"
+                        id="lesson-topic">
+
+                        ${lesson.topic}
+
+                    </h2>
+
+                </div>
+
+                <p>
+
+                    <b>Band:</b>
+                    ${lesson.band}
+
+                </p>
+
+                <p>
+
+                    <b>Skill:</b>
+                    ${lesson.skill}
+
+                </p>
+            `;
+
+            lesson.sections.forEach(
+
+                (section, index) => {
+
+                    html += `
+
+                        <div class="section">
+
+                            <h3>
+
+                                Section ${index + 1}
+
+                            </h3>
+
+                            <div class="section-label">
+
+                                Section Type
+
+                            </div>
+
+                            <input
+                                value="${section.type}"
+                                id="type-${index}"
+                            >
+
+                            <div class="section-label">
+
+                                Objective
+
+                            </div>
+
+                            <textarea
+                                id="objective-${index}"
+                            >${section.objective}</textarea>
+
+                            <div class="section-label">
+
+                                Activity
+
+                            </div>
+
+                            <textarea
+                                id="activity-${index}"
+                            >${section.activity}</textarea>
+
+                            <div class="section-label">
+
+                                Timing
+
+                            </div>
+
+                            <input
+                                type="number"
+                                value="${section.timing}"
+                                id="timing-${index}"
+                            >
+
+                        </div>
+                    `;
+                }
+            );
+
+            html += `
+
+                <div style="margin-top: 30px;">
+
+                    <button onclick="saveLesson()">
+
+                        Save Lesson Draft
+
+                    </button>
+
+                </div>
+
+                <div id="save-status"></div>
+            `;
+
+            result.innerHTML = html;
+        }
+
+        // SAVE LESSON
+
+        async function saveLesson() {
+
+            const lesson =
+                structuredClone(
+                    window.currentLesson
+                );
+
+            lesson.topic =
+                document.getElementById(
+                    "lesson-topic"
+                ).innerText.trim();
+
+            lesson.sections.forEach(
+
+                (section, index) => {
+
+                    section.type =
+                        document.getElementById(
+                            `type-${index}`
+                        ).value;
+
+                    section.objective =
+                        document.getElementById(
+                            `objective-${index}`
+                        ).value;
+
+                    section.activity =
+                        document.getElementById(
+                            `activity-${index}`
+                        ).value;
+
+                    section.timing =
+                        parseInt(
+
+                            document.getElementById(
+                                `timing-${index}`
+                            ).value
+                        );
+                }
+            );
+
+            const response = await fetch(
+
+                "/save_lesson",
+
+                {
+
+                    method: "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body:
+                        JSON.stringify(lesson)
+                }
+            );
+
+            const data =
+                await response.json();
+
+            // FILE EXISTS
+
+            if (
+                data.status ===
+                "file_exists"
+            ) {
+
+                window.pendingSaveLesson =
+                    lesson;
+
+                window.pendingFilename =
+                    data.filename;
+
+                document.getElementById(
+                    "save-modal"
+                ).style.display = "flex";
+
+                return;
+            }
+
+            // NORMAL SAVE
+
+            document.getElementById(
+                "save-status"
+            ).innerHTML = `
+
+                <div class="success-message">
+
+                    Lesson draft saved successfully.
+
+                </div>
+            `;
+        }
+
+        // OVERWRITE
+
+        async function confirmOverwrite() {
+
+            await processSaveAction(
+                "overwrite"
+            );
+        }
+
+        // CREATE VERSION
+
+        async function confirmNewVersion() {
+
+            await processSaveAction(
+                "new_version"
+            );
+        }
+
+        // PROCESS SAVE ACTION
+
+        async function processSaveAction(
+            action
+        ) {
+
+            const response = await fetch(
+
+                "/confirm_save",
+
+                {
+
+                    method: "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+
+                        lesson:
+                            window.pendingSaveLesson,
+
+                        action: action,
+
+                        filename:
+                            window.pendingFilename
+                    })
+                }
+            );
+
+            const data =
+                await response.json();
+
+            document.getElementById(
+                "save-status"
+            ).innerHTML = `
+
+                <div class="success-message">
+
+                    ${data.status}
+
+                </div>
+            `;
+
+            document.getElementById(
+                "save-modal"
+            ).style.display = "none";
+        }
+
+        // OPEN DRAFT MODAL
+
+        async function openDraftModal() {
+
+            document.getElementById(
+                "draft-modal"
+            ).style.display = "flex";
+
+            const response = await fetch(
+                "/lessons"
+            );
+
+            const data =
+                await response.json();
+
+            const draftList =
+                document.getElementById(
+                    "draft-list"
+                );
+
+            let html = "";
+
+            data.lessons.forEach(
+
+                filename => {
+
+                    html += `
+
+                        <div
+                            class="draft-item"
+
+                            onclick="
+                                loadLesson(
+                                    '${filename}'
+                                )
+                            ">
+
+                            ${filename}
+
+                        </div>
+                    `;
+                }
+            );
+
+            draftList.innerHTML = html;
+        }
+
+        // CLOSE DRAFT MODAL
+
+        function closeDraftModal() {
+
+            document.getElementById(
+                "draft-modal"
+            ).style.display = "none";
+        }
+
+        // LOAD LESSON
+
+        async function loadLesson(
+            filename
+        ) {
+
+            const response = await fetch(
+
+                `/lesson/${filename}`
+            );
+
+            const lesson =
+                await response.json();
+
+            renderLesson({
+                lesson: lesson
+            });
+
+            closeDraftModal();
+        }
+
+    </script>
+
+</body>
+
+</html>

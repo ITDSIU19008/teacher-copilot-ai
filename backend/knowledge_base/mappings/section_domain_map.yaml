@@ -1,0 +1,38 @@
+warmup: []
+
+prediction: []
+
+reading: []
+
+writing: []
+
+feedback: []
+
+vocabulary:
+  - vocabulary
+  - pronunciation
+
+grammar:
+  - grammar
+  - pronunciation
+
+guided_discovery:
+  - grammar
+
+process_writing:
+  - writing
+
+speaking_task:
+  - speaking
+
+role_play:
+  - speaking
+
+debate:
+  - speaking
+
+presentation:
+  - speaking
+
+listening:
+  - listening

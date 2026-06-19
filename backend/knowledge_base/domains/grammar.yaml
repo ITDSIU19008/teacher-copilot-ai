@@ -1,0 +1,47 @@
+grammar:
+
+  types:
+
+    - prescriptive
+
+    - descriptive
+
+    - pedagogical
+
+    - grammar_as_individual_ability
+
+
+  knowledge:
+
+    conscious:
+
+      name: declarative
+
+      focus: accuracy
+
+    unconscious:
+
+      name: procedural
+
+      focus: fluency
+
+
+  teaching_focus:
+
+    - meaning
+
+    - form
+
+    - pronunciation
+
+    - use
+
+
+  lesson_design:
+
+    - identify_target_grammar
+
+    - plan_lesson_stages
+
+    - create_guided_discovery_worksheet
+

@@ -1,0 +1,384 @@
+IELTS:
+
+  A2:
+
+    Reading:
+
+      max_vocab: 8
+      max_duration: 60
+
+      recommended_sections:
+
+        - warmup
+        - check_homework
+        - prediction
+        - vocabulary
+        - reading
+        - post_reading
+        - feedback
+
+    Writing:
+
+      max_vocab: 8
+      max_duration: 60
+
+      recommended_sections:
+
+        - warmup
+        - check_homework
+        - model_analysis
+        - controlled_writing
+        - drafting
+        - feedback
+
+    Listening:
+
+      max_vocab: 8
+      max_duration: 60
+
+      recommended_sections:
+
+        - warmup
+        - check_homework
+        - prediction
+        - vocabulary
+        - listening
+        - post_listening
+        - feedback
+
+    Speaking:
+
+      max_vocab: 8
+      max_duration: 60
+
+      recommended_sections:
+
+        - warmup
+        - check_homework
+        - language_preparation
+        - controlled_speaking
+        - speaking_task
+        - feedback
+
+  B1:
+
+    Reading:
+
+      max_vocab: 12
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - prediction
+          - vocabulary
+          - reading
+          - post_reading
+          - feedback
+
+    Writing:
+
+      max_vocab: 10
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - model_analysis
+          - brainstorming
+          - planning
+          - drafting
+          - editing
+          - feedback
+
+    Listening:
+
+      max_vocab: 10
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - prediction
+          - vocabulary
+          - listening
+          - post_listening
+          - feedback
+
+    Speaking:
+
+      max_vocab: 10
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - language_preparation
+          - controlled_speaking
+          - discussion
+          - feedback
+
+
+  B2:
+
+    Reading:
+
+      max_vocab: 15
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - prediction
+          - vocabulary
+          - reading
+          - critical_thinking
+          - feedback
+
+    Writing:
+
+      max_vocab: 12
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - model_analysis
+          - audience_analysis
+          - brainstorming
+          - planning
+          - drafting
+          - revising
+          - feedback
+
+    Listening:
+
+      max_vocab: 12
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - prediction
+          - listening
+          - inferencing
+          - feedback
+
+    Speaking:
+
+      max_vocab: 12
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - language_preparation
+          - role_play
+          - discussion
+          - feedback
+
+
+  C1:
+
+    Reading:
+
+      max_vocab: 20
+      max_duration: 90
+
+      recommended_sections:
+
+          - warmup
+          - check_homework
+          - prediction
+          - reading
+          - text_analysis
+          - critical_thinking
+          - feedback
+
+    Writing:
+
+      max_vocab: 18
+      max_duration: 90
+
+      recommended_sections:
+
+          - check_homework
+          - model_analysis
+          - audience_analysis
+          - purpose_analysis
+          - planning
+          - drafting
+          - revising
+          - editing
+          - final_feedback
+
+    Listening:
+
+      max_vocab: 18
+      max_duration: 90
+
+      recommended_sections:
+
+          - check homework
+          - prediction
+          - listening
+          - note_taking
+          - inferencing
+          - feedback
+
+    Speaking:
+
+      max_vocab: 18
+      max_duration: 90
+
+      recommended_sections:
+
+          - check homework
+          - language_preparation
+          - debate
+          - discussion
+          - presentation
+          - feedback
+
+
+  C2:
+
+    Reading:
+
+      max_vocab: 25
+      max_duration: 90
+
+      recommended_sections:
+
+          - check homework
+          - prediction
+          - reading
+          - text_analysis
+          - critical_thinking
+          - project
+
+    Writing:
+
+      max_vocab: 25
+      max_duration: 90
+
+      recommended_sections:
+
+        - check homework
+        - audience_analysis
+        - style_analysis
+        - drafting
+        - revising
+        - editing
+        - final_feedback
+
+    Listening:
+
+      max_vocab: 25
+      max_duration: 90
+
+      recommended_sections:
+
+          - check homework
+          - listening
+          - note_taking
+          - inferencing
+          - critical_response
+
+    Speaking:
+
+      max_vocab: 25
+      max_duration: 90
+
+      recommended_sections:
+
+          - check homework
+          - debate
+          - presentation
+          - critical_discussion
+          - peer_feedback
+
+
+
+TOEIC:
+
+  A2:
+
+    Listening:
+
+      max_vocab: 8
+
+      max_duration: 60
+
+      recommended_sections:
+
+        - warmup
+        - prediction
+        - vocabulary
+        - listening
+        - post_listening
+        - feedback
+
+
+  TOEIC:
+
+  B1:
+
+    Listening:
+
+      max_vocab: 10
+      max_duration: 60
+
+      recommended_sections:
+
+        - warmup
+        - prediction
+        - vocabulary
+        - listening
+        - post_listening
+        - feedback
+
+
+  B2:
+
+    Listening:
+
+      max_vocab: 12
+
+      max_duration: 90
+
+      recommended_sections:
+
+        - warmup
+        - prediction
+        - vocabulary
+        - listening
+        - post_listening
+        - feedback
+
+
+  C1:
+
+    Listening:
+
+      max_vocab: 18
+
+      max_duration: 90
+
+      recommended_sections:
+
+        - warmup
+        - prediction
+        - vocabulary
+        - listening
+        - post_listening
+        - feedback
+

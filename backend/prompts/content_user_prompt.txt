@@ -1,0 +1,44 @@
+COURSE TYPE:
+{course_type}
+
+BAND:
+{band}
+
+SKILL:
+{skill}
+
+TOPIC:
+{topic}
+
+FULL LESSON OUTLINE:
+
+{lesson_outline}
+
+SELECTED SECTION
+
+Position:
+{section_position}
+
+Type:
+{section_type}
+
+Objective:
+{objective}
+
+Activity:
+{activity}
+
+Timing:
+{timing} minutes
+
+PEDAGOGY RULES
+
+Maximum Vocabulary:
+{max_vocab}
+
+Recommended Sections:
+{recommended_sections}
+
+RELEVANT PEDAGOGY KNOWLEDGE
+
+{knowledge_context}

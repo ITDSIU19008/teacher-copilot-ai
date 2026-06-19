@@ -1,0 +1,61 @@
+activities:
+
+  - name: think_pair_share
+
+    purpose:
+      activate_background_knowledge
+
+  - name: brainstorming
+
+    purpose:
+      generate_ideas
+
+  - name: image_discussion
+
+    purpose:
+      activate_schema
+
+  - name: prediction_discussion
+
+    purpose:
+      activate_schema
+
+  - name: quick_poll
+
+    purpose:
+      generate_interest
+
+  - name: topic_questions
+
+    purpose:
+      lesson_lead_in
+
+  - name: personal_experience_sharing
+
+    purpose:
+      personalization
+
+  - name: video_hook
+
+    purpose:
+      engagement
+
+  - name: joke_discussion
+
+    purpose:
+      engagement
+
+  - name: situational_presentation
+
+    purpose:
+      context_building
+
+  - name: function_guessing
+
+    purpose:
+      language_awareness
+
+  - name: context_observation
+
+    purpose:
+      guided_discovery

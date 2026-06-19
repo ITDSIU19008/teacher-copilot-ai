@@ -1,0 +1,59 @@
+listening:
+
+  subskills:
+
+    - predicting
+
+    - listening_for_gist
+
+    - listening_for_detail
+
+    - listening_for_specific_information
+
+    - inferencing
+
+    - note_taking
+
+    - identifying_attitude
+
+    - identifying_intention
+
+  lesson_flow:
+
+    - activate_schema
+
+    - prediction
+
+    - preteach_vocabulary
+
+    - first_listening_gist
+
+    - second_listening_detail
+
+    - third_listening_specific_information
+
+    - post_listening
+
+  post_listening_activities:
+
+    - discussion
+
+    - summary
+
+    - role_play
+
+    - presentation
+
+    - reflection
+
+  common_materials:
+
+    - dialogues
+
+    - interviews
+
+    - podcasts
+
+    - lectures
+
+    - announcements

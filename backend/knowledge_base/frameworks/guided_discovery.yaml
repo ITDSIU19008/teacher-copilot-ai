@@ -1,0 +1,95 @@
+framework:
+
+name: Guided Discovery
+
+description: >
+  Students discover grammar rules through context,
+  examples and guided questions.
+
+procedure:
+
+  - set_context
+
+  - gist_reading_or_listening
+
+  - language_focus
+
+  - meaning_discovery
+
+  - form_discovery
+
+  - controlled_practice
+
+  - freer_practice
+
+
+lesson_flow:
+
+  - warm_up
+
+  - lead_in
+
+  - reading_for_gist
+
+  - reading_for_detail
+
+  - target_language_focus
+
+  - guided_discovery_questions
+
+  - rule_creation
+
+  - application
+
+
+guided_discovery_questions:
+
+  meaning:
+
+    - discover_meaning
+
+  form:
+
+    - discover_form
+
+
+application_types:
+
+  controlled:
+
+    - gap_fill
+
+    - error_correction
+
+    - multiple_choice
+
+    - matching
+
+  semi_controlled:
+
+    - guided_practice
+
+  freer:
+
+    - discussion
+
+    - role_play
+
+    - communication_task
+
+
+worksheet_components:
+
+  - target_language_to_observe
+
+  - guided_questions
+
+  - mfpu
+
+  - application
+
+
+homework:
+
+  - read_the_text
+

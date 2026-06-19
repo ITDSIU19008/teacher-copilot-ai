@@ -1,0 +1,59 @@
+framework:
+
+  name: Task Based Learning
+
+  stages:
+
+    - pre_task
+
+    - task_cycle
+
+    - language_focus
+
+  pre_task:
+
+    objectives:
+
+      - introduce_topic
+
+      - activate_background_knowledge
+
+      - prepare_vocabulary
+
+  task_cycle:
+
+    phases:
+
+      - task
+
+      - planning
+
+      - report
+
+  language_focus:
+
+    phases:
+
+      - language_analysis
+
+      - language_practice
+
+  task_examples:
+
+    - problem_solving
+
+    - information_gap
+
+    - survey
+
+    - project
+
+    - decision_making
+
+  principles:
+
+    - meaning_before_form
+
+    - authentic_communication
+
+    - learner_autonomy

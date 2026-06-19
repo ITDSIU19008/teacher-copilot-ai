@@ -1,0 +1,223 @@
+quality_rules:
+
+  global:
+
+    mandatory:
+
+      - lesson_has_clear_objective
+
+      - lesson_has_logical_progression
+
+      - activities_match_objective
+
+      - timing_is_realistic
+
+      - includes_feedback
+
+      - includes_assessment
+
+      - teacher_student_balance
+
+    warnings:
+
+      - too_many_teacher_talking_stages
+
+      - no_student_output
+
+      - insufficient_practice
+
+      - insufficient_interaction
+
+  reading:
+
+    must_include:
+
+      - gist
+
+      - detail
+
+    recommended:
+
+      - prediction
+
+      - vocabulary
+
+      - post_reading
+
+    progression:
+
+      - easier_to_harder
+
+      - global_to_specific
+
+    assessment:
+
+      - comprehension_check
+
+  listening:
+
+    must_include:
+
+      - gist
+
+      - detail
+
+    recommended:
+
+      - prediction
+
+      - vocabulary
+
+      - post_listening
+
+    assessment:
+
+      - listening_check
+
+  writing:
+
+    must_include:
+
+      - planning
+
+      - drafting
+
+      - feedback
+
+    recommended:
+
+      - model_analysis
+
+      - revising
+
+      - editing
+
+      - redrafting
+
+    principles:
+
+      - content_feedback_before_language
+
+  grammar:
+
+    must_include:
+
+      - meaning
+
+      - form
+
+      - practice
+
+    recommended:
+
+      - pronunciation
+
+      - freer_practice
+
+    guided_discovery:
+
+      - context
+
+      - guided_questions
+
+      - rule_creation
+
+  vocabulary:
+
+    must_include:
+
+      - meaning
+
+      - pronunciation
+
+      - usage
+
+    recommended:
+
+      - collocations
+
+      - recycling
+
+      - communicative_use
+
+  pronunciation:
+
+    must_include:
+
+      - model
+
+      - practice
+
+      - feedback
+
+    recommended:
+
+      - minimal_pairs
+
+      - communicative_practice
+
+  speaking:
+
+    must_include:
+
+      - student_speaking_time
+
+      - interaction
+
+      - feedback
+
+    recommended:
+
+      - fluency_task
+
+      - accuracy_task
+
+  lesson_timing:
+
+    warmup:
+
+      min: 3
+      max: 15
+
+    vocabulary:
+
+      min: 5
+      max: 15
+
+    gist:
+
+      min: 5
+      max: 15
+
+    detail:
+
+      min: 10
+      max: 25
+
+    practice:
+
+      min: 10
+      max: 30
+
+    feedback:
+
+      min: 5
+      max: 15
+
+  scoring:
+
+    excellent:
+
+      score: 90
+
+    good:
+
+      score: 75
+
+    acceptable:
+
+      score: 60
+
+    poor:
+
+      score: 40

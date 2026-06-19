@@ -1,0 +1,90 @@
+pronunciation:
+  teach_what:
+    segmental_features:
+
+      - phonemes
+
+      - vowels
+
+      - consonants
+
+      - diphthongs
+
+    suprasegmental_features:
+
+      - prominence
+
+      - tones
+
+      - intonation
+
+      - tonic_syllable
+
+      - connected_speech
+
+    additional:
+
+      - spelling_connection
+
+      - accents
+
+
+  teach_when:
+
+    - vocabulary_preteach
+
+    - post_text_language_focus
+
+    - feedback
+
+    - emergent_language
+
+    - pronunciation_course
+
+
+  teaching_methods:
+
+    deductive:
+
+      - ppp
+
+      - ttt
+
+      - drills
+
+      - tongue_twisters
+
+      - reciting_poems
+
+    inductive:
+
+      - elicitation
+
+      - contextual_examples
+
+      - minimal_pairs
+
+      - proprioception
+
+
+    activities:
+
+      - imitation
+
+      - error_analysis
+
+      - comparison
+
+      - games
+
+
+    authentic_materials:
+
+      - jokes
+
+      - videos
+
+      - instagram
+
+      - pronunciation_coaches
+

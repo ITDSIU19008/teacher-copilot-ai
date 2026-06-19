@@ -1,0 +1,49 @@
+rubric:
+
+  content:
+
+    weight: 25
+
+  organization:
+
+    weight: 25
+
+  vocabulary:
+
+    weight: 25
+
+  grammar:
+
+    weight: 25
+
+  criteria:
+
+    excellent:
+
+      - clear_ideas
+
+      - logical_structure
+
+      - varied_vocabulary
+
+      - accurate_grammar
+
+    satisfactory:
+
+      - mostly_clear
+
+      - adequate_structure
+
+      - adequate_vocabulary
+
+      - some_errors
+
+    needs_improvement:
+
+      - unclear_ideas
+
+      - weak_structure
+
+      - limited_vocabulary
+
+      - frequent_errors

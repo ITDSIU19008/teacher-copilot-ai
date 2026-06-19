@@ -1,0 +1,29 @@
+rubric:
+
+  fluency:
+
+    weight: 25
+
+  pronunciation:
+
+    weight: 25
+
+  grammar:
+
+    weight: 25
+
+  vocabulary:
+
+    weight: 25
+
+  criteria:
+
+    excellent:
+
+      - natural_fluency
+
+      - clear_pronunciation
+
+      - accurate_grammar
+
+      - varied_vocabulary

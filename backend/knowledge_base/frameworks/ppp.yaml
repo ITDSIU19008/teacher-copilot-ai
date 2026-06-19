@@ -1,0 +1,82 @@
+framework:
+
+name: PPP
+
+full_name: Presentation Practice Production
+
+stages:
+
+  - presentation
+
+  - practice
+
+  - production
+
+
+presentation:
+
+  techniques:
+
+    - model_dialogue
+
+    - written_model
+
+    - oral_model
+
+    - visual_support
+
+    - context_creation
+
+
+practice:
+
+  focus:
+
+    - accuracy
+
+  activities:
+
+    - repetition
+
+    - memorization
+
+    - acting_out_dialogue
+
+    - role_reading
+
+    - dialogue_construction
+
+    - pronunciation_practice
+
+
+production:
+
+  focus:
+
+    - fluency
+
+  activities:
+
+    - role_play
+
+    - oral_games
+
+    - guessing_games
+
+    - interviews
+
+    - discussion
+
+
+communicative_improvements:
+
+  - elicit_more_from_students
+
+  - use_inductive_approach
+
+  - personalize_tasks
+
+  - enlarge_production_stage
+
+  - information_gap_tasks
+

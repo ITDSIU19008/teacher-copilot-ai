@@ -1,0 +1,57 @@
+speaking:
+
+  speaking_types:
+
+    - interaction
+
+    - transaction
+
+    - discussion
+
+    - presentation
+
+    - debate
+
+  lesson_flow:
+
+    - lead_in
+
+    - language_preparation
+
+    - controlled_speaking
+
+    - guided_speaking
+
+    - freer_speaking
+
+    - feedback
+
+  fluency_activities:
+
+    - discussion
+
+    - role_play
+
+    - information_gap
+
+    - interview
+
+    - debate
+
+  accuracy_activities:
+
+    - drilling
+
+    - substitution
+
+    - controlled_dialogues
+
+  feedback_focus:
+
+    - grammar
+
+    - vocabulary
+
+    - pronunciation
+
+    - fluency

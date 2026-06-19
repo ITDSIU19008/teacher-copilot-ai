@@ -1,0 +1,71 @@
+activities:
+
+  pre_writing:
+
+    - brainstorming
+
+    - mind_mapping
+
+    - idea_generation
+
+    - content_preparation
+
+    - language_preparation
+
+    - planning
+
+  controlled_writing:
+
+    - gap_fill
+
+    - sentence_completion
+
+    - paragraph_completion
+
+    - guided_writing
+
+  drafting:
+
+    - individual_draft
+
+    - collaborative_draft
+
+  revising:
+
+    - peer_review
+
+    - compare_with_model
+
+    - content_feedback
+
+  editing:
+
+    - grammar_check
+
+    - vocabulary_check
+
+    - punctuation_check
+
+  redrafting:
+
+    - second_draft
+
+    - final_draft
+
+  final_feedback:
+
+    - teacher_feedback
+
+    - peer_feedback
+
+    - self_reflection
+
+writing_types:
+
+  - creative_writing
+
+  - collaborative_writing
+
+  - fast_writing
+
+  - instant_writing
