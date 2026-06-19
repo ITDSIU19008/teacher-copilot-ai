@@ -8,6 +8,7 @@ import {
 
 } from "react-router-dom";
 
+import { Analytics } from '@vercel/analytics/react';
 
 import Dashboard from
 "./pages/Dashboard";
@@ -51,6 +52,8 @@ export default function App() {
         />
 
       </Routes>
+
+      <Analytics />
 
     </BrowserRouter>
   );
