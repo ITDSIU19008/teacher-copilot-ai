@@ -1266,6 +1266,8 @@ if (
             border-[#ddd6fe]
             py-4
             rounded-2xl
+            hover:bg-[#faf8ff]
+            transition
           "
         >
           Load Draft
