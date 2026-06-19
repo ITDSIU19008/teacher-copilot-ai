@@ -111,6 +111,14 @@ export default function OutlineBuilder() {
 
 ] = useState("");
 
+  const [
+
+    generating,
+
+    setGenerating
+
+  ] = useState(false);
+
 // const [
 
 //   hasUnsavedChanges,
@@ -126,22 +134,21 @@ export default function OutlineBuilder() {
 
   async function generateLesson() {
 
-  if (
-
-    !formData.topic.trim()
-
-  ) {
+  if (!formData.topic.trim()) {
 
     setTopicError(
-
       "Please enter a topic."
-
     );
 
     return;
   }
 
-  setTopicError("");
+  try {
+
+    setGenerating(true);
+
+    setTopicError("");
+
 
   const response = await fetch(
 
@@ -172,8 +179,22 @@ export default function OutlineBuilder() {
   setLesson(
     data.lesson
   );
-}
+} 
 
+catch (error) {
+
+    console.error(error);
+
+    alert(
+      "Failed to generate lesson."
+    );
+
+  } finally {
+
+    setGenerating(false);
+
+  }
+}
 
   // =========================
   // LOAD DRAFT LIST
@@ -1012,28 +1033,28 @@ function clearLesson() {
 
           onClick={generateLesson}
 
-          className="
+          disabled={generating}
 
+          className={`
             flex-1
-
-            bg-[#8b5cf6]
-            hover:bg-[#7c3aed]
-
-            text-white
-
             py-4
-
             rounded-2xl
-
+            text-white
             shadow-lg
-
             transition
-          "
-          
+
+            ${
+              generating
+                ? "bg-violet-400 cursor-not-allowed"
+                : "bg-[#8b5cf6] hover:bg-[#7c3aed]"
+            }
+          `}
         >
-
-          Generate
-
+          {
+            generating
+              ? "Generating..."
+              : "Generate Outline"
+          }
         </button>
 
         {/* LOAD */}

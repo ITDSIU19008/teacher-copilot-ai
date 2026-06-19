@@ -1240,11 +1240,12 @@ if (
           }
           className="
             flex-1
-            bg-white
+            text-white
             border
             border-[#ddd6fe]
             py-4
             rounded-2xl
+            bg-[#8b5cf6] hover:bg-[#7c3aed]
           "
         >
           Load Outline
@@ -1626,7 +1627,7 @@ if (
                   className="
                     flex
                     items-center
-                    gap-7
+                    gap-2
                     mb-5
                   "
                 >
@@ -1641,19 +1642,19 @@ if (
                     generating
                   }
 
-                  className="
-
+                  className={`
                     bg-[#8b5cf6]
-
                     text-white
-
                     px-6
                     py-4
-
                     rounded-2xl
-
                     mb-6
-                  "
+                    ${
+                      generating
+                        ? "bg-violet-400 cursor-not-allowed"
+                        : "bg-[#8b5cf6] hover:bg-[#7c3aed]"
+                    }
+                  `}
                 >
 
                   {
