@@ -1,6 +1,7 @@
 fastapi
-uvicorn
+uvicorn[standard]
 pyyaml
 pydantic
 python-dotenv
-openai
+openai>=1.0.0
+jinja2
